@@ -38,7 +38,7 @@ public class EmployeeController {
     public ResponseEntity<?> getInfo(@RequestParam Integer id) {
         return employeeService.getEmployee(id);
     }
- 
+  
     @PostMapping("/saveEmployee")
     public ResponseEntity<?> saveClient(@RequestBody Employee employee) {
         return employeeService.saveEmployee(employee);
